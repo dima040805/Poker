@@ -1,4 +1,4 @@
-#include "Верхний колонтитул.h"
+#include "page header.h"
 using namespace std;
 
 void karts_1(person player[2], int koloda[4][13], int& k1){
