@@ -1,4 +1,4 @@
-#include "Верхний колонтитул.h"
+#include "Г‚ГҐГ°ГµГ­ГЁГ© ГЄГ®Г«Г®Г­ГІГЁГІГіГ«.h"
 using namespace std;
 
 int main(){
@@ -20,11 +20,7 @@ int main(){
 		k = 0;
 		bank = 0;
 		karts_1(players, koloda, k1);
-		for(int i = 0; i < 30; i ++)
-			cout << endl;
 		karts_1(players, koloda, k1);
-		for(int i = 0; i < 30; i ++)
-			cout << endl;
 		k1 = 0;
 	
 		stavki_osn(players, k1, bank);
