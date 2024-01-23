@@ -1,5 +1,3 @@
-
-
 #include "page header.h"
 using namespace std;
 
@@ -10,11 +8,11 @@ void karts_1(person player[2], int koloda[4][13], int& k1){
 	for(int i = 0; i < 2; i++){
 		s = rand() % 13;
 		v = rand() % 4;
-		player[k1].player[i].suit = -1;
-		while(player[k1].player[i].suit == -1){
+		player[k1].PlayerKarts[i].suit = -1;
+		while(player[k1].PlayerKarts[i].suit == -1){
 			if(koloda[v][s] != 0){
-				player[k1].player[i].suit = s;
-				player[k1].player[i].value = v;
+				player[k1].PlayerKarts[i].suit = s;
+				player[k1].PlayerKarts[i].value = v;
 				koloda[v][s] = 0;
 				break;
 			}
@@ -22,8 +20,9 @@ void karts_1(person player[2], int koloda[4][13], int& k1){
 			v = rand() % 4;}
 	}
 	cout << "player: ";
+	if(k1 == 0)
 	for(int i = 0; i < 2; i ++)
-		cout << c1[player[k1].player[i].suit] << ' ' << c[player[k1].player[i].value] << "      ";
+		cout << c1[player[k1].PlayerKarts[i].suit] << ' ' << c[player[k1].PlayerKarts[i].value] << "      ";
 	cout << endl;
 	k1++;
 	k1 %= 2;
