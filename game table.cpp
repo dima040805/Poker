@@ -20,7 +20,6 @@ void karts_1(person player[2], int koloda[4][13], int& k1){
 			v = rand() % 4;}
 	}
 	cout << "player: ";
-	if(k1 == 0)
 	for(int i = 0; i < 2; i ++)
 		cout << c1[player[k1].PlayerKarts[i].suit] << ' ' << c[player[k1].PlayerKarts[i].value] << "      ";
 	cout << endl;
